@@ -1,0 +1,10 @@
+{
+  "name": "signUp",
+  "version": "0.0.1",
+  "description": "signup today!",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.4.5",
+    "mongoose": "^4.2.6"
+  }
+}

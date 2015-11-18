@@ -12,12 +12,6 @@ mongoose.connect('mongodb://localhost/shortly');
 
 // connecting to our database router and middleware
 require('/middleware.js')(app, express);
-// for sending messages
-
-
-
-
-//
 
 app.listen(8000);
 console.log("listening in on port 8000");

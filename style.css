@@ -1,5 +1,9 @@
+body {
+  background-color: #F0F3BD;
+}
+
 h1 {
-  
+  color: #00A896;
 }
 
 div {
@@ -19,6 +23,10 @@ a {
 }
 
 #signup {
+
+}
+
+#signupBox {
 
 }
 

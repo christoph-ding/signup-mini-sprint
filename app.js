@@ -11,9 +11,9 @@ angular.module('app', [
       url: '/home',
       templateUrl: 'pages/home.html'
     })
-    .state('home.signup',  {
+    .state('home.message',  {
       url: '/message',
-      templateUrl: 'pages/signup.html',
+      templateUrl: 'pages/message.html',
       controller: 'messageCtrl'
     })
     .state('home.signup',  {
@@ -21,5 +21,4 @@ angular.module('app', [
       templateUrl: 'pages/signup.html',
       controller: 'signupCtrl'
     })
-})
 })

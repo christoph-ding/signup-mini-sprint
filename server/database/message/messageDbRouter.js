@@ -1,5 +1,5 @@
-var messageDbController = require('/messageDbController.js');
+var messageDbController = require('./messageDbController.js');
 
-module.exports = function(app) {
-  app.post('/api/sendMsg', messageDbController.saveMessage);
+module.exports = function (app) {
+  app.post('/', messageDbController.saveMessage);
 }

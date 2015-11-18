@@ -2,6 +2,7 @@ angular.module('message', [])
 
 .controller('messageCtrl', function($scope, $http) {
   $scope.message = '';
+
   $scope.sendMessage = function () {
     console.log($scope.message)
     return $http({
@@ -12,6 +13,7 @@ angular.module('message', [])
       }
     })
     .then(function (resp) {
+      
       $scope.message = '';
       return resp;
     });

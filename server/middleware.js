@@ -1,6 +1,5 @@
 var bodyParser = require('body-parser');
 
-
 module.exports = function(app, express) {
   // app === userRouter injected from middlware.js
   var messageRouter = express.Router();
@@ -9,5 +8,5 @@ module.exports = function(app, express) {
   app.use('/api/sendMsg', bodyParser.json(), messageRouter);
 
   // inject our routers into their respective route files
-  require('/database/message/messageDbRouter.js')(messageRouter);
+  require('./database/message/messageDbRouter.js')(messageRouter);
 };

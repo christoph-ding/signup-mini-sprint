@@ -16,6 +16,11 @@ angular.module('app', [
       templateUrl: 'pages/message.html',
       controller: 'messageCtrl'
     })
+    .state('home.getMessages',  {
+      url: '/getMessages',
+      templateUrl: 'pages/getMessages.html',
+      controller: 'messageCtrl'
+    })
     .state('home.signup',  {
       url: '/signup',
       templateUrl: 'pages/signup.html',

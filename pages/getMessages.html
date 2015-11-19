@@ -1,0 +1,7 @@
+<div id="getMessages">
+  <h1> Get all the message </h1>
+  <button ng-click="getMessages()"> Get Messages </button>
+  <ul>
+    <li ng-repeat = "message in allMessages track by $index" > {{message}} </li>
+  </ul>  
+</div>

@@ -9,12 +9,22 @@ module.exports = {
     });
     newMessage.save(function (err, newMessage) {
       if (err) {
-        console.log('got to the db server for message')
         res.send(500, err);
       } else {
         res.status(newMessage).send(newMessage.body)
       }
     });
+  },
+  getMessages: function(req, res, next) {
+    console.log('...retrieving message...')
+    Message.find({}, function (err, messages) {
+      if (err) {
+        res.send(500, err);
+      } else {
+        console.log(messages);
+        res.send(messages);  
+      }
+    })
   }
 };
 
